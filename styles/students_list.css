@@ -1,0 +1,155 @@
+/* Filename: styles/students_list.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7; /* Light gray background */
+    color: #333; /* Black text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styling */
+.container {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: #fff; /* White background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Header styling */
+.header {
+    background-color: #000000; /* Black background */
+    padding: 20px;
+    text-align: center;
+    color: #fff; /* White text */
+    border-radius: 8px 8px 0 0;
+}
+
+.header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* Search form styling */
+.search-form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light gray background */
+    border: 1px solid #ddd; /* Gray border */
+    border-radius: 8px;
+}
+
+.search-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-form input[type="text"] {
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.search-form button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #000000; /* Black button */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.search-form button[type="submit"]:hover {
+    background-color: #333; /* Darker black on hover */
+}
+
+/* Table styling */
+.table-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light gray background */
+    border: 1px solid #ddd; /* Gray border */
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray background */
+}
+
+tr:hover {
+    background-color: #f2f2f2; /* Lighter gray background on hover */
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    background-color: #000000; /* Black button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #333; /* Darker black on hover */
+    transform: scale(1.05); /* Scale up slightly on hover */
+}
+
+button:active {
+    background-color: #666;
+    transform: scale(0.95); /* Pressed button effect */
+}
+
+/* Dashboard links styling */
+.dashboard-links {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 0 10px;
+    background-color: #000000; /* Black button */
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease-out;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #333; /* Darker black on hover */
+    transform: scale(1.05); /* Scale up slightly on hover */
+}

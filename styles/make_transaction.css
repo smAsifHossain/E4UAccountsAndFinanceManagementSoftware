@@ -1,0 +1,206 @@
+/* Universal styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /* Default font for the entire page */
+}
+
+/* Body styling */
+body {
+    background-color: #f7f7f7; /* Light gray background */
+    color: #333; /* Black text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styling */
+.container {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: #fff; /* White background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Header styling */
+.container h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    color: #fff; /* White text */
+    border-radius: 8px 8px 0 0;
+}
+
+/* Form styling */
+form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light gray background */
+    border: 1px solid #ddd; /* Gray border */
+    border-radius: 8px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px; /* Adjust as needed */
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="email"],
+form select,
+form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+form button[type="submit"],
+form button[type="button"] {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #000000; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    margin-top: 30px;
+    background-color: #f9f9f9; /* Light gray background */
+    border: 1px solid #ddd; /* Gray border */
+    border-radius: 8px;
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray background */
+}
+
+table tr:hover {
+    background-color: #f2f2f2; /* Lighter gray background on hover */
+}
+
+/* Notes section styling */
+.container h2,
+.container h3 {
+    margin-top: 30px;
+    font-size: 24px; /* Adjust heading font size */
+}
+
+.container textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Button styling */
+.container .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 0 10px;
+    background-color: #000000; /* Blue button */
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease-out;
+    border: none;
+}
+
+.container .btn:hover {
+    background-color: #333; /* Darker black on hover */
+    transform: scale(1.05); /* Scale up slightly on hover */
+}
+
+.container .total-balance {
+    font-weight: bold;
+    text-align: right;
+    margin-top: 20px; /* Adjust margin as needed */
+    margin-right: 190px;
+    margin-bottom: 30px;
+}
+
+.container .total-balance strong {
+    margin-left: 10px; /* Provide some space between label and value */
+}
+
+.container .notes-list {
+    margin-top: 20px;
+}
+
+.container .note {
+    background-color: #f9f9f9; /* Light gray background */
+    border: 1px solid #ddd; /* Gray border */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+.container .note p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.container .note-date {
+    font-size: 14px;
+    color: #666; /* Gray text color */
+    margin-top: 5px;
+}
+
+/* Edit and Delete button styling */
+.edit-btn,
+.delete-btn {
+    padding: 2px 4px;
+    font-size: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease-out;
+    text-decoration: none;
+}
+
+.edit-btn {
+    background-color: #000000; 
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #000000; 
+    transform: scale(1.05);
+}
+
+.delete-btn {
+    background-color: #000000;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #000000; 
+    transform: scale(1.05);
+}

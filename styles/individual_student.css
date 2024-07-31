@@ -1,0 +1,280 @@
+/* Body styling */
+body {
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Container styling */
+.container {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Header styling */
+.container h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Section headings */
+.container h2 {
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.container h3 {
+    font-size: 20px;
+    margin-top: 30px;
+    color: #333;
+}
+
+/* Form styling */
+form {
+    margin-top: 20px;
+}
+
+form label {
+    margin-right: 10px;
+    display: inline-block;
+    width: 140px; /* Adjust as needed */
+    text-align: right;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="email"],
+form select,
+form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: calc(100% - 160px); /* Adjust according to label width */
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+form button {
+    padding: 12px 24px;
+    margin-top: 10px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease-out;
+}
+
+form button:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    margin-top: 30px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    table-layout: fixed;
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f0f0f0;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f2f2f2;
+}
+
+/* Button styling */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 10px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease-out;
+}
+
+.btn:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+/* Notes Section */
+.notes-section {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.notes-section .notes-header {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.notes-section .notes-input {
+    width: calc(100% - 80px); /* Adjust margin and input width */
+    margin: 0 40px; /* Adjust margins as needed */
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.notes-section .add-note-btn {
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease-out;
+}
+
+.notes-section .add-note-btn:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+/* Notes List */
+.notes-list {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.notes-list .note {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.notes-list .note p {
+    margin: 0;
+    font-size: 16px;
+    flex: 1;
+}
+
+.notes-list .note .delete-note {
+    margin-left: 10px;
+    cursor: pointer;
+    color: #e74c3c;
+}
+
+/* Total Balance Section */
+.total-balance {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #000;
+}
+
+/* Edit and Delete Button Styling */
+.edit-btn,
+.delete-btn {
+    padding: 8px 16px;
+    margin: 5px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease-out;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+    form label {
+        display: block;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+    
+    form input[type="text"],
+    form input[type="date"],
+    form input[type="email"],
+    form select,
+    form textarea {
+        width: 100%;
+    }
+    
+    .notes-section .notes-input {
+        width: calc(100% - 20px);
+        margin: 10px;
+    }
+    
+    .notes-section .add-note-btn {
+        margin: 10px;
+    }
+}
+
+
+/* Adjusting Notes Section */
+.notes-section .notes-input {
+    width: calc(100% - 80px); /* Adjust margin and input width */
+    margin: 0 40px; /* Adjust margins as needed */
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.notes-section .add-note-btn {
+    margin-top: 10px;
+    margin-left: 10px; /* Align button */
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease-out;
+}

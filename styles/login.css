@@ -1,0 +1,112 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7; /* Light gray background */
+    color: #333; /* Black text */
+}
+
+/* Welcome container styling */
+.welcome-container {
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: #fff; /* White background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* Login container styling */
+.login-container {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555; /* Darker gray text */
+}
+
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 22px); /* Adjusted width */
+    padding: 12px;
+    margin-bottom: 20px; /* Increased margin */
+    border: 1px solid #ccc;
+    border-radius: 6px; /* Slightly rounded corners */
+}
+
+button[type="submit"] {
+    background-color: #000; /* Black button */
+    color: white;
+    padding: 14px 24px; /* Increased padding */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease-out;
+}
+
+button[type="submit"]:hover {
+    background-color: #333; /* Darker black on hover */
+    transform: scale(1.05); /* Scale up slightly on hover */
+}
+
+/* Error message styling */
+.error-message {
+    color: #FF0000;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Welcome footer styling */
+.welcome-footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.welcome-footer p {
+    font-size: 14px;
+    color: #666; /* Dark gray text */
+}
+
+.welcome-footer a {
+    text-decoration: none;
+    color: #007bff; /* Blue link */
+}
+
+.welcome-footer a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+.welcome-header {
+    font-size: 12px;
+    margin-bottom: 20px;
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    color: #fff; /* White text */
+    border-radius: 8px 8px 0 0;
+}
